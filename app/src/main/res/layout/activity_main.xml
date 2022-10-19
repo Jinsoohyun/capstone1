@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="자가 설문조사"
+        android:textSize="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Extitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---가슴---"
+        android:foregroundGravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="196dp"
+        tools:layout_editor_absoluteY="282dp"
+        app:layout_constraintTop_toBottomOf="@id/Title1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="1) 다이어트를 해도 가슴살이 안빠지는 것 같다."
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Extitle1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="379dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintVertical_bias="0.254">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="예"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Answer1"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니오"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Answer2"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Question2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:text="2) 가슴 때문에 얇은 옷을 입기 꺼려진다."
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="379dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/Question2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintVertical_bias="0.254">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="예"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Answer3"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니오"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Answer4"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Question3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="3) 여자 가슴 같다는 소릴 종종 듣는다.      "
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="379dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/Question3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintVertical_bias="0.254">
+        <RadioButton
+            android:layout_weight="1"
+            android:text="예"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Answer5"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:text="아니오"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Answer6"/>
+    </RadioGroup>
+
+    <Button
+        android:text="결과"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintVertical_bias="0.971"
+        android:onClick="onClick"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
